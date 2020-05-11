@@ -391,7 +391,7 @@ var (
         </style>
     </head>
     <body>
-        <h1>{{.Title}}</h1>
+        <h1>点击图片->查看清晰原图{{.Title}}</h1>
         <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="pswp__bg"></div>
             <div class="pswp__scroll-wrap">
