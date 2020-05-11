@@ -431,7 +431,7 @@ var (
         <div id="gallery-overview" class="gallery-overview">
 {{range .Images}}
           <figure>
-            <a href="{{$.URLPathPrefix}}/{{.Path}}" data-size="{{.Width}}x{{.Height}}"><img src="{{$.URLPathPrefix}}/{{.ThumbPath}}" width="400" /></a>
+            <a href="{{$.URLPathPrefix}}/{{.Path}}" data-size="{{.Width}}x{{.Height}}"><img src="{{$.URLPathPrefix}}/{{.ThumbPath}}" width="600" /></a>
             <figcaption>{{.Caption}}&nbsp;</figcaption>
           </figure>
 {{end}}
