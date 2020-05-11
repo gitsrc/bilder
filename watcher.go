@@ -372,7 +372,7 @@ var (
          }
          #gallery-overview figure {
              margin: 0px;
-             max-width: 200px;
+             max-width: 400px;
          }
          #gallery-overview figure a {
              display: flex;
