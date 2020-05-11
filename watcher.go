@@ -209,14 +209,14 @@ func (w *watcher) generateThumb(d, n string) (string, error) {
 
 	var resized image.Image
 	if isPortrait {
-		resized = resize.Resize(200, 0, img, resize.Lanczos3)
+		resized = resize.Resize(400, 0, img, resize.Lanczos3)
 	} else {
-		resized = resize.Resize(0, 200, img, resize.Lanczos3)
+		resized = resize.Resize(0, 400, img, resize.Lanczos3)
 	}
 
 	square, err := cutter.Crop(
 		resized,
-		cutter.Config{Width: 200, Height: 200, Mode: cutter.Centered},
+		cutter.Config{Width: 400, Height: 400, Mode: cutter.Centered},
 	)
 	if err != nil {
 		log.Printf("Failed to crop thumb for %#v, err=%v", p, err)
